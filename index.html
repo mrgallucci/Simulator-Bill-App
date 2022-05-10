@@ -1,0 +1,121 @@
+<!Doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<link rel="stylesheet" href="style/estilo.css">
+<link rel="stylesheet" href="style/resposive.css">
+
+<title>Calculadora de Gorjetas</title>
+
+</head>
+
+<body>
+    <header id="cabecalho">
+        <ul>
+       <li><a href="index.html">Inicio </a></li>
+       <li class="dropdown">
+       <a href="javascript:void(0)" class="dropbtn">Nosso Cardapio</a>
+       <div class="dropdown-content">
+         <a href="#">Link 1</a>
+         <a href="pizzas.html">Pizzas</a>
+         <a href="#">Link 3</a>
+       </li>
+         </div>
+        <li><a href="#">Nossa Politica</a></li> 
+        <li style="float:right"><a class="active" href="cadastro.html">Trabalhe Conosco</a></li>
+    </ul>
+      
+
+    </header>
+
+<div id="container">
+
+
+<h1 class="title"> Calculadora de Gorjetas</h1>
+
+<div>
+<form class="tipsForm" id="tipsForm">
+
+<label for="bill">
+
+<p>Qual o valor da sua conta?</p>
+
+</label>
+<p class="rs"> R$ <input type="number" placeholder="100"name="bill" id="bill" class="formInput" required></p>
+<label for="serviceQual">
+
+<p>Como foi o seu serviço?</p>
+
+</label>
+<p>
+
+<select name="serviceQual" id="serviceQual" class="formSelect" required>
+<option disable selected value="0">--Escolha uma Opçao</option>
+<option value="0.3">30% - Incrivel</option>
+<option value="0.2">20% - Muito Bom</option>
+<option value="0.15">15% - Bom</option>
+<option value="0.1">10% - Pode Melhorar</option>
+</select>
+
+</p>
+<label for="people">
+
+<p>Quantas pessoas vão dividir a conta?</p>
+
+</label>                                
+<p><input type="number" placeholder="1" name="people" id="people" class="formInput" required> pessoas(s)</p>
+
+<button type="submit" class="formSubmit">Calcular</button>
+
+</form>
+
+</div>
+
+<div id="totalTip">
+
+    Gorjeta total:
+
+    R$<span id="tip">0.00</span>
+
+    <span id="each">por pessoa!</span>
+
+</div>
+<div id="avaliar">
+
+    <form class="avaliacao">
+
+        <p>Deixei sua avaliação:</p>
+
+        <div class="stars">
+        <a href="javascript:void(0)" onclick="Avaliar(1)">
+        <img src="img/star0.png" id="s1"></a>
+        <a href="javascript:void(0)" onclick="Avaliar(2)">
+        <img src="img/star0.png" id="s2"></a>
+        <a href="javascript:void(0)" onclick="Avaliar(3)">
+        <img src="img/star0.png" id="s3"></a>
+        <a href="javascript:void(0)" onclick="Avaliar(4)">
+        <img src="img/star0.png" id="s4"></a>
+        <a href="javascript:void(0)" onclick="Avaliar(5)">
+        <img src="img/star0.png" id="s5"></a>
+        </div>
+           <p>É a primeira vez que visita nossa casa?</p>                 
+        <input type="checkbox"name="cliente"> 1ª vez <input type="checkbox" name="sex"> Já sou cliente!
+        Email:<input type="email" name="email" class="avaliar-email" placeholder="Seu e-mail">
+       
+        <textarea class="avaliacao" placeholder="Deixe sua avaliação"></textarea>
+        <button type="submit" class="botao-avaliar">Enviar</button>   
+
+    </form>
+    
+
+</div>
+
+</div>
+<hr>
+<footer class="rodape">Restaurante Inc 2022 &copy;</footer>
+
+<script src="script's/funcoes.js"></script>
+<script type="text/javascript" src="script's/script.js"></script>
+</body>
+</html>

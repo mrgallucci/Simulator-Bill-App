@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+*{
+    margin:0;
+    padding: 0;
+
+
+}
+:root {
+    --primary-color:rgb(34, 85, 4);
+    --secondary-color:DimGrey;
+    --tertiary-color:Gainsboro;
+}
+
+body {
+    background-image: url('../garcom.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Sarala', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .suspenso {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn{
+    background-color: #111;
+  }
+  li.dropdown {
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+#container {
+    height: 759px;
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 3px 3px 3px var(--tertiary-color);
+    border-radius: 20px;
+}
+.title {
+    background:var(--tertiary-color);
+    color: var(--secundary-color);
+    padding: 20px;
+    text-transform:uppercase ;
+    font-size: 18px;
+    font-weight: normal;
+    border-top-left-radius:20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+.rs {
+   margin: 10px 10px 8px 8px;
+   padding: auto;
+}
+
+.tipsform {
+    padding-left:20px;
+    padding-right: 20px;
+    border: 20px;
+}
+.formInput {
+    background-color: white;
+    width: 40px;
+    height: 30px;
+    padding:5px;
+    border-radius: 10px;
+    
+
+}
+
+.formInput :focus{
+    border: 3px solid var(--primary-color);
+    outline: none;
+}
+.formSelect {
+    width: 180px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.formSubmit {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+    box-shadow: black;
+}
+
+#totalTip {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+#avaliar{
+    font-family:'Sarala', sans-serif;
+    display: block;
+    align-items: center;
+    flex-direction:row;
+    width: 80px;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.avaliacao {
+    font-family: 'Sarala' sans-serif;
+    display: block;
+    margin: 3px auto;
+    padding: 3px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: grey;
+    box-shadow: var(--primary-color);
+}
+    
+.avaliar-email {
+    display: block;
+    margin: 10px auto;
+    padding: 1px;
+    border-radius: 10px;
+    width: auto;
+    height: 20px;
+    font-size: auto;
+    color: black;
+    box-shadow: var(--primary-color);
+}
+
+.botao-avaliar {
+    border-radius: 2px;
+    font-family: 'Sarala',sans-serif;
+}
+
+.rodape {
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-weight: 100;
+    font-size: 15px;
+    color: black;
+}
+

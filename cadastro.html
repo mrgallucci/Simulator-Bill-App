@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" type="text/css" href="style/formulario.css" media="screen">
+
+        
+        <title>Trabalhe Conosco</title>
+        <script>
+            alert
+            ('Caso a vaga desejada no momento por você tenha sido preenchida,seu curriculo ficará em nosso banco de dados! Boa sorte!')
+        </script>
+    </head>
+
+    <body>
+        <header id="cabecalho">
+            <ul>
+           <li><a href="index.html">Inicio </a></li>
+           <li class="dropdown">
+           <a href="javascript:void(0)" class="dropbtn">Nosso Cardapio</a>
+           <div class="dropdown-content">
+             <a href="#">Link 1</a>
+             <a href="pizzas.html">Pizzas</a>
+             <a href="#">Link 3</a>
+           </li>
+             </div>
+            <li><a href="#">Nossa Politica</a></li> 
+            <li style="float:right"><a class="active" href="cadastro.html">Trabalhe Conosco</a></li>
+        </ul>
+          
+    
+        </header>
+    
+
+       
+        <div>
+            <h1 id="titulo">Cadastro de Curriculo Online</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+
+    
+        <form>
+
+            <fieldset class="grupo">
+     
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+                <div class="campo">
+                    <label for="idade"><strong>Data de Nascimento</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+                <div class="campo">
+                    <label for="cidade"><strong>Cidade</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            
+            <div class="campo">
+                <label><strong>Marque a vaga que voce pretende concorrer:</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="basico" checked>Garçom
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="avancado">Barman
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="premmium">Ajudante de Cozinha
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="premmium">Cozinheiro
+                </label>
+
+            </div>
+
+            
+            <div class="campo">
+                <label for="pacotes"><strong>Qual a sua Escolaridade?</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Ensino Fundamental(completo)</option>
+                  <option>Ensino Fundamental (incompleto)</option>
+                  <option>Ensino Medio(Completo)</option>
+                  <option>Ensino Medio(incompleto)</option>
+                  <option>Ensino Superior(Completo)</option>
+                  <option>Ensino Superior(incompleto)</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                
+                <div id="check">
+                    <label><strong>Voce tem alguma experiencia na vaga selecionada?</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="televisao">
+                    <label for="tecnologia1"> Sim! Já trabalhei na area</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="celular">
+                    <label for="tecnologia2">Não! Ainda não tenho Experiencia</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="notebook">
+                    <label for="tecnologia3">Um Pouco - fui Freelance - fiz cursos!</label>
+
+                </div>
+            </fieldset>
+
+            
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Faça uma breve avaliação sobre: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>

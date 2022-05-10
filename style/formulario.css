@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+*{
+    margin:0;
+    padding: 0;
+
+
+}
+:root {
+    --primary-color:rgb(34, 85, 4);
+    --secondary-color:DimGrey;
+    --tertiary-color:Gainsboro;
+}
+
+body {
+    background-image: url('../garcom.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Sarala', sans-serif;
+    padding: 8px;
+    margin: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .suspenso {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn{
+    background-color: #111;
+  }
+  li.dropdown {
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+#titulo {
+    font-family:'Sarala', sans-serif;
+    color: #1a072b;
+    margin:10px;
+    padding: 3px;
+    align-items: center;
+} 
+
+#subtitulo {
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 10%;
+} 
+
+#check{
+    display: inline-block;
+}
+
+fieldset {
+    border: 0;
+}
+
+
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #3b3b53;
+    border-radius: 5px;
+}
+
+
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #3b3b53;
+    display: block;
+}
+
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #3b3b53;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+
+.campo select option {
+    padding-right: 1em;
+}
+
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+
+.botao {
+    font-size: 1.2em;
+    background: #3b3b3b;
+    color: var(--primary-color);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+
+  
+
+
+}
+
+
+.botao:hover {
+    background: #f3f1f8;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+
+.botao, select{
+    cursor: pointer;
+}
